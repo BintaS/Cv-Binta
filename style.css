@@ -1,0 +1,144 @@
+/* importation d'une police de caractère */
+
+@font-face {
+    font-family: "Grand Hotel";
+    src: url("fontawesome/fa-brands-400.woff2");
+}
+
+
+/* règles générales */
+
+/*cette règle permet de tout mettre à zéro pour partir sur de bonne bases*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    flex-direction: row-reverse;
+}
+
+header h1 {
+    text-align: center;
+	width: 50%; 
+	margin-top: 15%; 
+}
+
+header div img{
+    width: 80%; 
+    height: auto; 
+    margin: 10%;
+}
+header .zone30{
+    background-color: rgb(190, 163, 130);
+    padding: 10vh;
+}
+
+.zone70{
+    width: 70%;
+}
+
+.zone30{
+    width: 30%;
+    background-color: rgb(190, 163, 130);
+}
+
+section h2{
+    background:linear-gradient(rgb(223, 166, 166), rgb(134, 100, 100));
+    color: white
+}
+#contact{
+    text-align: center;
+    display:block;
+}
+
+main{
+    box-sizing: border-box;
+    display:block;
+}
+
+.far{
+    text-align: center;
+}
+
+#autre{
+    margin-top: 0%;
+}
+
+p{
+    text-align: center;
+}
+
+#date {
+    font-weight: bold;
+}
+
+article{
+    text-align: center;
+}
+
+div .zone30{
+    background-color: rgb(190, 163, 130);
+}
+
+
+footer{
+    box-sizing: content-box;
+}
+
+footer .img{
+    width: 150vh; 
+    height: 150%;
+}
+
+#divers{
+    text-align: center;
+    display:block ;
+}
+
+h1{
+    color: rgb(131, 71, 126);
+    text-align: center;
+}
+
+h2{
+    color: rgb(129, 65, 65);
+    text-align: center;
+}
+
+h3{
+    color: rgb(129, 65, 65);
+    text-align: center;
+}
+
+.profil{
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+/* cette partei concerne uniquement l'adaptation à l'écran */
+@media (max-width: 664px) {
+    #categories div{
+        flex-grow: inherit;
+    }
+    #recettes img{
+        float: inherit;
+    }
+    h2{
+        font-size: 48px;
+    }
+}
+/* Quand on arrive à 460px de large alors le main passe à 94% de large*/
+@media (max-width: 460px){
+    main{
+        width: 95%;
+    }   
+}
